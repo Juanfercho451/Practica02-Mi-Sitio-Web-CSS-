@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+nav {
+	margin: 27px auto 0;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+    font-size: 0;  
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.4em;
+    cursor: pointer;
+    text-decoration: overline;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 20%;
+}
+a:nth-child(2) {
+	width: 20%;
+}
+a:nth-child(3) {
+	width: 20%;
+}
+a:nth-child(4) {
+	width: 20%;
+}
+a:nth-child(5) {
+	width: 20%;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 20%;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 20%;
+	left: 20%;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 20%;
+	left: 40%;
+	background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 20%;
+	left: 60%;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 20%;
+	left: 80%;
+	background-color: #e67e22;
+}
+
+body {
+	text-decoration: overline;
+    min-height: 100vh;
+    
+	background: 
+		linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+		url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80) no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+    background-size: cover;
+    border-bottom: .2em solid #fff;
+}
+header {
+    text-shadow: 5px 5px black;
+    letter-spacing: 15px;
+    word-spacing: 30px;
+    text-decoration: overline;
+    font-variant: small-caps;
+    text-align: center;
+	clear: both;
+    width: 50%;	
+}
+.logo {
+    font-variant: small-caps;
+   	    color: white;
+    text-shadow:  0 0 9px #FF0000, 0 0 9px #0000FF;
+    font-size: 35px; 
+    font-weight: 900; 
+    text-align: center; 
+    background: linear-gradient(150deg, white, black, white); 
+    margin:30px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 20px 20px 20px 20px; 
+    -moz-border-radius: 20px 20px 20px 20px; 
+    -webkit-border-radius: 20px 20px 20px 20px; 
+    border: 1px solid blanchedalmond;
+}
+img {
+    border: 1px solid rgb(247, 242, 242);
+    border-radius: 7px;
+    padding: 5px;
+    width: 600px;
+  }
+footer{
+    font-variant: small-caps;
+    text-align: center;
+    clear: both;
+    font-size: 15px;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+   }
